@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sunrise Sunset API Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script> 
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script> 
 </head>
 
 <body id="main"> 
     <div class="container">
         <div class="title">
-            <h1> Sunrise Sunset API Dashboard </h1>
+            <h1>Sunrise and Sunset API Dashboard </h1>
         </div>
+
         <!-- Loctation List -->
         <div class="locations">
+            <h2>Select a Location</h2>
             <ul>
                 <li>Chicago, Illinois</li>
                 <li>Phoenix, Arizona</li>
@@ -31,19 +33,69 @@
             </ul>
         </div>
 
-        <!-- Section: Education -->
-        <div class="section">
-            <div class="section-title">Education</div>
-            <div id="displayEducation" class="info">
-                <strong>Degree:</strong> Your Degree<br>
-                <strong>Institution:</strong> Your University Name<br>
-                <strong>Year:</strong> Passing Year
+            <div class="today-sun-info">
+                <h2>Today</h2>
+                <div class="day-info">
+                    <h3>Daily Information</h3>
+                    <h4>Day Length: <!--Insert Day Length--></h4>
+                    <h4>Solar Noon: <!--Insert Solar Noon--></h4>
+                </div>
+                <!-- Date, is span needed? 
+                <span>Saturday, November 30, 2024</span-->
+                
+                <div class="sunrise-info">
+                    <h3>Sunrise</h3>
+                    <h4>Sunrise: <!--Insert Sunrise Time--></h4>
+                    <h4>Dawn: <!--Insert Dawn Time--></h4>
+                </div>
+
+                <div class="sunset-info">
+                    <h3>Sunset</h3>
+                    <h4>Sunset: <!--Insert Sunrise Time--></h4>
+                    <h4>Dusk: <!--Insert Dawn Time--></h4>
+                </div>
             </div>
+
+            <div class="tomorrow-sun-info">
+                <h2>Tomorrow</h2>
+                <div class="day-info">
+                    <h3>Daily Information</h3>
+                    <h4>Day Length: <!--Insert Day Length--></h4>
+                    <h4>Solar Noon: <!--Insert Solar Noon--></h4>
+                </div>
+                <!-- Date, is span needed? 
+                <span>Saturday, November 30, 2024</span-->
+                
+                    <div class="sunrise-info">
+                    <h3>Sunrise</h3>
+                    <h4>Sunrise: <!--Insert Sunrise Time--></h4>
+                    <h4>Dawn: <!--Insert Dawn Time--></h4>
+                </div>
+
+                <div class="sunset-info">
+                    <h3>Sunset</h3>
+                    <h4>Sunset: <!--Insert Sunset Time--></h4>
+                    <h4>Dusk: <!--Insert Dusk Time--></h4>
+                </div>
+            </div>
+
+            <div class="overall">
+                <h2>Summary</h2>
+                <div class="summary-today-info">
+                    <h3>Today</h3>
+                    <p></p>
+                </div>
+                <div class="summary-today-info">
+                    <h3>Tomorrow</h3>
+                    <p></p>
+                </div>
+            </div>
+        
         </div>
         <!-- Footer: Source -->
          <div class="credit">
             <a href="https://sunrisesunset.io/api/" target="_blank">Powered by SunriseSunset.io</a>
          </div>
-
+         
     </div>
 </body>
