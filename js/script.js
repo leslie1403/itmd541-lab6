@@ -110,7 +110,7 @@ const cities = {
 
 
           document.querySelector('.location-name').innerText = `Location: ${button.innerText}`; 
-          document.querySelector('.location-timezone').innerText = `Time Zone: ${currentTimeZone}`
+          document.querySelector('.location-timezone').innerText = `Time Zone: ${city.timezone}`
         })
         .catch(error => console.error('Error fetching data:', error));
     });
