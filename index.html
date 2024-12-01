@@ -17,31 +17,28 @@
         <!-- Loctation List -->
         <div class="locations">
             <h2>Select a Location</h2>
-            <ul>
-                <li>Chicago, Illinois</li>
-                <li>Phoenix, Arizona</li>
-                <li>Los Angeles, California</li>
-                <li>San Diego, California</li>
-                <li>San Jose, California</li>
-                <li>New York City, New York</li>
-                <li>Philadelphia, Pennsylvania</li>
-                <li>Austin, Texas</li>
-                <li>Dallas, Texas</li>
-                <li>Houston, Texas</li>
-                <li>San Antonio, Texas</li>   
-                <li>My Location</li>
-            </ul>
+            <div class="location-buttons"> 
+                <button class="location" id="chicago">Chicago, Illinois</button>
+                <button class="location" id="phoenix">Phoenix, Arizona</button> 
+                <button class="location" id="losAngeles">Los Angeles, California</button> 
+                <button class="location" id="sanDiego">San Diego, California</button> 
+                <button class="location" id="sanJose">San Jose, California</button> 
+                <button class="location" id="newYorkCity">New York City, New York</button> 
+                <button class="location" id="philadelphia">Philadelphia, Pennsylvania</button> 
+                <button class="location" id="austin">Austin, Texas</button> 
+                <button class="location" id="dallas">Dallas, Texas</button> 
+                <button class="location" id="houston">Houston, Texas</button> 
+                <button class="location" id="sanAntonio">San Antonio, Texas</button> 
+                <button class="location" id="myLocation">My Location</button>
         </div>
 
             <div class="today-sun-info">
-                <h2>Today</h2>
+                <h2 class="today-header">Today, <!--Insert Date--></h2>
                 <div class="day-info">
                     <h3>Daily Information</h3>
                     <h4>Day Length: <!--Insert Day Length--></h4>
                     <h4>Solar Noon: <!--Insert Solar Noon--></h4>
                 </div>
-                <!-- Date, is span needed? 
-                <span>Saturday, November 30, 2024</span-->
                 
                 <div class="sunrise-info">
                     <h3>Sunrise</h3>
@@ -57,16 +54,14 @@
             </div>
 
             <div class="tomorrow-sun-info">
-                <h2>Tomorrow</h2>
+                <h2 class="tomorrow-header">Tomorrow, <!--Insert Day Length--></h2>
                 <div class="day-info">
                     <h3>Daily Information</h3>
                     <h4>Day Length: <!--Insert Day Length--></h4>
                     <h4>Solar Noon: <!--Insert Solar Noon--></h4>
                 </div>
-                <!-- Date, is span needed? 
-                <span>Saturday, November 30, 2024</span-->
                 
-                    <div class="sunrise-info">
+                <div class="sunrise-info">
                     <h3>Sunrise</h3>
                     <h4>Sunrise: <!--Insert Sunrise Time--></h4>
                     <h4>Dawn: <!--Insert Dawn Time--></h4>
@@ -81,14 +76,9 @@
 
             <div class="overall">
                 <h2>Summary</h2>
-                <div class="summary-today-info">
-                    <h3>Today</h3>
-                    <p></p>
-                </div>
-                <div class="summary-today-info">
-                    <h3>Tomorrow</h3>
-                    <p></p>
-                </div>
+                <div class="summary-today-info"> 
+                    <h3 class="location-name">Location: <!--Insert Selected Location--></h3> 
+                    <h3 class="location-timezone">Time Zone: <!--Insert Time Zone--></h3>
             </div>
         
         </div>
@@ -96,6 +86,6 @@
          <div class="credit">
             <a href="https://sunrisesunset.io/api/" target="_blank">Powered by SunriseSunset.io</a>
          </div>
-         
+
     </div>
 </body>

@@ -12,7 +12,7 @@
     border-width: 5px;
     border-color: sandybrown;
     padding: 10px;
-    
+    margin: 20px;   
 }
 
 .overall {
@@ -35,26 +35,15 @@ h1, h2, h3{
     text-align: center;
 }
 
-.locations ul { 
+.locations .location-buttons { 
     display: grid; 
     grid-template-columns: repeat(3, 1fr); 
-    gap: 10px; 
+    gap: 10px;
     list-style-type: none; 
-    padding: 0; 
-} 
-
-.locations li { 
     padding: 5px; 
-    border: 1px solid #ccc; 
+    border: 1px solid #ccc;
     border-radius: 4px;
     text-align: center;
-}
-
-.locations li {
-    padding: 5px;
-    border: 1px solid sandybrown;
-    background-color: #fcc970;
-    border-radius: 4px;
 }
 
 .credit {
@@ -64,3 +53,28 @@ h1, h2, h3{
     background-color: #a09d9d;
     padding: 1rem;
   }
+
+.location {
+    padding: 10px;
+    border: 1px solid sandybrown;
+    background-color: #fcc970;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.location:hover {
+    background-color: #ffb347;
+}
+
+.location:active {
+    background-color: #ff8c00;
+}
+
+.credit {
+    margin-top: 2em;
+    font-size: 0.75em;
+    text-align: center;
+    background-color: #a09d9d;
+    padding: 1rem;
+}
