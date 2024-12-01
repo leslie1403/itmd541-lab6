@@ -1,24 +1,66 @@
-/* Flexbox Approach */
-.locations {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Evenly distribute columns */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 20px; 
+    padding: 20px;
 }
 
-.locations ul {
-    flex: 1 1 calc(33.333% - 10px); /* Each column takes up 1/3 of the width, minus space for gaps */
-    list-style-type: none;
-    padding: 0;
-    margin: 5px; /* Add margin to separate columns */
+.today-sun-info, .tomorrow-sun-info {
+    grid-column: span 1;
+    border-style: groove;
+    border-width: 5px;
+    border-color: sandybrown;
+    padding: 10px;
+    
+}
+
+.overall {
+    grid-column: span 2; 
+}
+
+.title, .locations, .credit {
+    grid-column: span 2; 
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0.5px;
+    font-weight: normal;
+}
+
+h1, h2, h3{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.locations ul { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px; 
+    list-style-type: none; 
+    padding: 0; 
+} 
+
+.locations li { 
+    padding: 5px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    text-align: center;
 }
 
 .locations li {
     padding: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid sandybrown;
+    background-color: #fcc970;
     border-radius: 4px;
 }
 
-.footer {
+.credit {
     margin-top: 2em;
-    font-size: 0.8em;
+    font-size: .75em;
+    text-align: center;
+    background-color: #a09d9d;
+    padding: 1rem;
   }
